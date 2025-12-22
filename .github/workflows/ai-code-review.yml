@@ -37,8 +37,10 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: |
             --model kimi-k2-0905-preview
+            --debug
         env:
           ANTHROPIC_BASE_URL: https://api.moonshot.cn/anthropic
+          ANTHROPIC_MODEL: kimi-k2-0905-preview
 
           # Optional: Customize the trigger phrase (default: @claude)
           # trigger_phrase: "/claude"
